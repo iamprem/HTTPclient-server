@@ -70,7 +70,7 @@ public class SocketClientHandler implements Runnable {
 				// Get the data from the inputStream
 				temp = ".";
 				temp = request.readLine();
-				while (temp.contains("<html>")) {
+				while (temp.contains("<html>")||temp.contains("<!doctype html>")||temp.contains("<!DOCTYPE html>")) {
 					while (!temp.equals("</html>")) {
 						temp = request.readLine();
 						System.out.println(temp);
