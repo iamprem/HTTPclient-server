@@ -10,10 +10,9 @@ class MyServer {
 	 */
 	
 	public static void main(String[] args) throws InterruptedException {
-		// Setting a default port number.
-//		int portNumber = Integer.parseInt(args[0]);
+		int portNumber = Integer.parseInt(args[0]);
 
-		int portNumber = 5554;
+//		int portNumber = 5554;
 		try {
 			// initializing the Socket Server
 			MultiThreadedServer socketServer = new MultiThreadedServer(

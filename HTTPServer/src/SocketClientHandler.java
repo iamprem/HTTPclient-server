@@ -116,20 +116,10 @@ public class SocketClientHandler implements Runnable {
 	private static boolean checkURL(String file) {
 
 		File myFile = new File(file);
-		System.out.println(file);
-		System.out.println("IT IS CHEKCING");
-		System.out.println(myFile.exists() && !myFile.isDirectory());
+//		System.out.println(file);
+//		System.out.println("IT IS CHEKCING");
+//		System.out.println(myFile.exists() && !myFile.isDirectory());
 		return myFile.exists() && !myFile.isDirectory();
-		
-//		String url;
-//
-//		url = requestHeader.split("\n")[1].substring(6)
-//				+ requestHeader.split("\n")[0].split(" ")[1];
-//		// System.out.println(url);
-//
-//		return url.equals("localhost/") || url.equals("localhost/index.htm/")
-//				|| url.equals("localhost/home.html/")
-//				|| url.equals("localhost/content.html/");
 
 	}
 
